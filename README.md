@@ -4,20 +4,19 @@ Projeto API de super-heróis
 
 Trata-se de de uma API que busca dados de super-heróis de uma outra API.
 
-- Criar uma API usando node
-- Sua api deverá consumir os dados da superhero-api
 
 Busca de herói
-Esta rota nos permitirá buscar um herói não só pelo nome, mas por qualquer informação que esteja escrita em qualquer um dos seus atributos de texto.
-- Criar uma rota GET /search que receberá um único atributo (via url) "q" - exemplo: "/search?q=hair"
+
+Esta rota nos permitire buscar um herói não só pelo nome, mas por qualquer informação que esteja escrita em qualquer um dos seus atributos de texto.
+- Rota GET /search que recebe um único atributo (via url) "q" - exemplo: "/search?q=hair"
 - Se o valor de "q" tiver menos de 3 caracteres, retornar um erro com status 400
-- A busca deverá conferir se a informação buscada está presente em alguns dos atributos do super-herói (name, tudo em appearance, biography e work), ignorando maiuscula e minúsculas (case insensitive)
-- Se nenhum super herói for encontrado, retornar status 204
-- Os que forem encontratos, retornar em um array de heróis
+- A busca confere se a informação buscada está presente em alguns dos atributos do super-herói (name, tudo em appearance, biography e work), ignorando maiuscula e minúsculas (case insensitive)
+- Se nenhum super herói for encontrado, status 204 é retornado
+- Os que forem encontratos, retornam em um array de heróis
 - Se no post vier um header "case-sensitive" com valor "true", buscar levando em consideração o case, se "case-sensitive" for "false" ou não for informado, achar independente de maiuscula e minúsculas
 
 Detalhe de herói
-- Criar uma rota GET /hero/{slug}, que irá obter o herói em questão pelo atributo slug
+- Rota GET /hero/{slug}, que irá obter o herói em questão pelo atributo slug
 - Se o herói existir, retornar apenas ele com status 200
 - Se o herói não existir, retornar 404
 
