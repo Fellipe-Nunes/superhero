@@ -9,7 +9,7 @@ Trata-se de de uma API que busca dados de super-heróis de uma outra API.
 
 Busca de herói
 Esta rota nos permitirá buscar um herói não só pelo nome, mas por qualquer informação que esteja escrita em qualquer um dos seus atributos de texto.
-- Criar uma rota GEt /search que receberá um único atributo (via url) "q" - exemplo: "/search?q=hair"
+- Criar uma rota GET /search que receberá um único atributo (via url) "q" - exemplo: "/search?q=hair"
 - Se o valor de "q" tiver menos de 3 caracteres, retornar um erro com status 400
 - A busca deverá conferir se a informação buscada está presente em alguns dos atributos do super-herói (name, tudo em appearance, biography e work), ignorando maiuscula e minúsculas (case insensitive)
 - Se nenhum super herói for encontrado, retornar status 204
