@@ -4,7 +4,6 @@ Projeto API de super-heróis
 
 Trata-se de de uma API que busca dados de super-heróis de uma outra API.
 
-Sua api
 - Criar uma API usando node
 - Sua api deverá consumir os dados da superhero-api
 
